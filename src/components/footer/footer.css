@@ -1,0 +1,80 @@
+.footer-container{
+    display: flex;
+}
+
+.footer-container .left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.footer-container .left .desc{
+    margin: 20px 0px;
+}
+
+.footer-container .left .socialContainer{
+    display: flex;
+}
+ 
+.footer-container .left .socialContainer .socialIcon{ 
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.footer-container .center{
+  flex: 1;
+  padding: 20px;
+}
+
+.footer-container .footer-title{
+    margin-bottom: 30px;
+}
+.footer-container .center .list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-container .center .list .listItem{
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.footer-container .right{
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-container .right .contactItem{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-container .right .payment{
+    width: 50%;
+}
+
+@media (max-width: 767px) {
+
+  .footer-container{
+    flex-direction: column;
+}
+.footer-container .center{
+  display: none;
+}
+.footer-container .right{
+  background-color: #fff8f8;
+}
+
+}
+

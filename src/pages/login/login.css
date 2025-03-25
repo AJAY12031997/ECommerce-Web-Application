@@ -1,0 +1,88 @@
+.popupr{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.4);
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  
+  .popup-innerr .close-btn{
+    position:absolute;
+    top:16px;
+    right:16px;
+  }
+  
+.login-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-wrapper{
+    width: 25%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 5px 10px 8px 10px #888888;
+}
+
+
+.login-title{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+
+.login-container form{
+    display: flex;
+    flex-direction: column;  
+}
+
+.login-container  input{
+    flex: 1;
+    min-width: 40%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+
+.login-container button{
+    width: 40%;
+    border: none;
+    padding: 15px 20px;
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+      
+}
+
+.login-container button:disabled{
+    color: green;
+    cursor: not-allowed;
+  }
+
+
+.login-link{
+    margin: 5px 0px;
+    font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.login-container .error{
+    color: red;
+}
+
+@media (max-width:767px){
+    .login-wrapper{
+        width:75%;
+    }
+}
